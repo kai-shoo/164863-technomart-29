@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Kai Shoo](https://up.htmlacademy.ru/htmlcss/29/user/164863).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Прусаков](https://htmlacademy.ru/profile/hikikomori).
 
 ---
 
