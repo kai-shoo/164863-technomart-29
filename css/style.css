@@ -165,8 +165,8 @@ header {
 
 .promo-item__button {
   font-size: 14px;
-  opacity: 0.3;
-  background-color: var(--white);
+  background-color: rgba(256, 256, 256, 0.3);
+  color: var(--white);
 }
 
 .promo-item_yellow {
@@ -221,17 +221,32 @@ header {
 .products-item__title {
   font-size: 18px;
   line-height: 20px;
+  font-family: PT Sans;
+  font-weight: 700;
+  color: black;
 }
 
 .products-item__sale {
   color: var(--special-greysale);
   font-size: 17px;
   line-height: 18px;
+  font-family: PT Sans;
+  font-weight: 700;
+}
+
+.products-item__price {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--white);
+  background-color: var(--basic-red);
 }
 
 .products-item__buy, .products-item__bookmark {
   font-size: 14px;
   line-height: 18px;
+  
 }
 
 .products-item__buy {
