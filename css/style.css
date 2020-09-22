@@ -92,7 +92,7 @@ header {
 
 .main-navigation {
   background: var(--special-greylight);
-  box-shadow: inset 0px -5px 0px var(--special-grey);
+  box-shadow: inset 0 -5px 0 var(--special-grey);
 }
 
 .purchase-menu, .main-navigation-menu {
@@ -221,7 +221,7 @@ header {
 .products-item__title {
   font-size: 18px;
   line-height: 20px;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   color: black;
 }
@@ -230,12 +230,12 @@ header {
   color: var(--special-greysale);
   font-size: 17px;
   line-height: 18px;
-  font-family: PT Sans;
+  font-family:  "PT Sans", Arial, sans-serif;
   font-weight: 700;
 }
 
 .products-item__price {
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -251,7 +251,7 @@ header {
 
 .products-item__buy {
   background-color: var(--basic-green);
-  box-shadow: inset 0px -3px 0px var(--green-shadow);
+  box-shadow: inset px -3px px var(--green-shadow);
   border-radius: 2px;
   color: var(--white);
 }
@@ -293,10 +293,10 @@ header {
   opacity: 0.5;
 }
 
-/*Сервисы*/
+/*SERVICES*/
 
 .services {
-  font-family: "PT Sans", Geneva, Verdana, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 13px;
 }
@@ -310,13 +310,13 @@ header {
 .services-toggle__item {
   color: var(--white);
   background-color: var(--special-greylight);
-  box-shadow: 0px 1px 0px var(--special-grey), inset 0px 1px 0px #405069;
+  box-shadow: 0 1px 0 var(--special-grey), inset 0 1px 0 #405069;
 }
 
 .services-toggle__item_active {
   background-color: var(--white);
   color: var(--special-greylight);
-  box-shadow: 0px 1px 0px #FFFFFF;
+  box-shadow: 0 1px 0 #FFFFFF;
 }
 
 .services-toggle__item:hover {
@@ -336,7 +336,7 @@ header {
   text-transform: uppercase;
 }
 
-/*ОПИСАНИЕ*/
+/*DESCRIPTION*/
 
 .description__heading {
   text-transform: uppercase;
@@ -344,14 +344,14 @@ header {
 }
 
 .description__content {
-  font-family: "PT Sans", Verdana, Sans;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .delivery__list {
   font-size: 18px;
 }
 
-/*ФУТЕР*/
+/*FOOTER*/
 
 .footer-top-wrapper {
   background: var(--special-greylight);
