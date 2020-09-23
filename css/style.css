@@ -395,7 +395,119 @@ header {
 
 
 
+/*PERFORATORS.HTML*/
 
+.header-content__profile, .header-content__exit {
+  background-color: var(--white);
+  color: black;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.header-content__account, .header-content__orders {
+  color: var(--special-greylight);
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.header-content__account:hover, .header-content__orders:hover {
+  color: var(--basic-red);
+}
+
+.header-content__profile:active, .header-content__exit:active, .header-content__account:active, .header-content__orders:active {
+  color: var(--basic-greylight);
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs>*>*{
+  text-transform: uppercase;
+  font-size: 13px;
+  color: black;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.container__title {
+  color: var(--special-greylight);
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  background-color: #F2F6F8;
+}
+
+.sort {
+  background: #F7F3EC;
+}
+
+.sort__menu{
+  list-style: none;
+}
+
+.sort__menu>*>* {
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
+  color: black;
+}
+
+.sort__item_active {
+  color: var(--basic-red);
+}
+
+.sort__item {
+  text-decoration: underline dotted var(--basic-red);
+  opacity: 0.3;
+}
+
+.catalog__menu {
+  list-style: none;
+}
+
+.pagination {
+  list-style: none;
+}
+
+.pagination>*>* {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: black;
+}
+
+
+.pagination__item_active {
+  color: var(--white);
+  background-color: var(--basic-red);
+}
+
+.pagination>*>*:not(.pagination__item_active) {
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.pagination>*>*:not(.pagination__item_active):hover {
+  border: 1px solid #C5C5C5;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.perforators-description {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  background-color: #F1F5F7;
+}
+
+.perforators-description h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
 
 
 
