@@ -1,5 +1,6 @@
 /* Variables */
 
+/*Имена цветов будут переделаны во что-то более осмысленное, пока что этим пользоваться невозможно */
 :root {
     --basic-red: #EE3643;
     --basic-green: #63A63E;
@@ -251,7 +252,7 @@ header {
 
 .products-item__buy {
   background-color: var(--basic-green);
-  box-shadow: inset px -3px px var(--green-shadow);
+  box-shadow: inset 0 -3px 0 var(--green-shadow);
   border-radius: 2px;
   color: var(--white);
 }
@@ -402,3 +403,5 @@ header {
 
 
 
+       
+       
