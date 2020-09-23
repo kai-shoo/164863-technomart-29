@@ -503,7 +503,7 @@ header {
   background-color: #F1F5F7;
 }
 
-.perforators-description:first-child {
+.perforators-description h2 {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
