@@ -400,15 +400,18 @@ header {
 
 /*PERFORATORS.HTML*/
 
-.purchase-cart_red {
-  background-color: var(--basic-red);
-}
 
 .header-content__profile, .header-content__exit {
   background-color: var(--white);
   color: black;
   font-size: 21px;
   line-height: 21px;
+}
+
+.purchase-cart_red {
+  text-transform: none;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .header-content__account, .header-content__orders {
