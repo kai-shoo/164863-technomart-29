@@ -496,6 +496,7 @@ header {
 
 .breadcrumbs {
   list-style: none;
+  padding: 0;
 }
 
 .breadcrumbs a{
@@ -586,10 +587,43 @@ header {
 }
 
 
+/*CATALOG GRID*/
+.page-catalog {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-content: start;
+}
 
+.breadcrumbs {
+  grid-column: 1 / -1;
+}
 
+.container__title {
+  grid-column: 1 / -1;
+}
 
+.filter {
+  grid-column: 1 /2;
+  grid-row: 3 / 5;
+}
 
+.sort {
+  grid-column-end: 2 / -1;
+}
+
+.pagination {
+
+}
+
+.perforators-description {
+  grid-column: 1 / -1;
+}
+
+.catalog__menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 70px;
+}
 
        
        
