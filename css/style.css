@@ -101,17 +101,20 @@ body {
 
 header {
   font-size: 18px;
+  line-height: 24px;
   background-color: var(--special-mask);
 }
 
 .purchase-navigation-wrapper {
   background-color: var(--special-grey);
+  margin-bottom: 46px;
 }
 
 .purchase-navigation {
   width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .main-navigation {
@@ -122,11 +125,42 @@ header {
   margin-bottom: 58px;
 }
 
+.logo {
+  background-color: var(--basic-red);
+  display: inline-block;
+}
+
+.logo img {
+  margin: 12px 55px;
+}
+
+
 .purchase-menu, .main-navigation-menu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
+.purchase-search {
+  flex-grow: 1;
+}
+
+.purchase-menu {
+  flex-grow: 1;
+  display: flex;
+}
+
+.purchase-item>a {
+  text-align: center;
+  line-height: 42px;
+  display: block;
+}
+
+.purchase-item {
+  flex-grow: 1;
+}
+
+
 
 .menu-item:hover {
   background-color: var(--special-grey);
@@ -147,16 +181,23 @@ header {
 
 .header-content {
   display: grid;
+  grid-gap: 70px;
   grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
   width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0;
+  margin-bottom: 40px;
 }
 
 .header-content-description {
   color: var(--basic-red);
   font-style: italic;
   font-size: 16px;
+  margin-left: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .header-content-phone {
@@ -166,6 +207,7 @@ header {
   line-height: 30px;
   border: 3px solid #FFFFFF;
   box-sizing: border-box;
+  margin-top: 0px;
 }
 
 .header-content-adress {
@@ -173,11 +215,21 @@ header {
   font-size: 14px;
 }
 
+.header-content-account {
+  display:flex;
+}
+
 .header-content-login, .header-content-registration {
   font-size: 21px;
-  line-height: 21px;
+  line-height: 45px;
+  flex-grow: 1;
+  text-align: center;
   color: black;
   background-color: var(--white);
+}
+
+.header-content-login {
+  margin-right: 10px;
 }
 
 .header-content-login:hover, .header-content-registration:hover {
@@ -187,6 +239,24 @@ header {
 .header-content-login:active, .header-content-registration:active {
   color: var(--basic-greylight)
 }
+
+.main-navigation-menu {
+  display: flex;
+}
+
+.menu-item {
+  min-height: 60px;
+  flex-grow: 1;
+}
+
+.menu-item a {
+  display: block;
+  min-height: 60px;;
+  line-height: 60px;
+  text-align: center;
+}
+
+
 
 /* */
 
@@ -405,6 +475,8 @@ header {
 
 .description {
   margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .description__heading {
@@ -416,16 +488,34 @@ header {
   font-family: var(--special-fonts);
 }
 
+.delivery {
+  width: 460px;
+}
+
+.contacts {
+  width: 300px;
+}
+
 .delivery__list {
   font-size: 18px;
 }
 
 /*FOOTER*/
 
-.footer-top-wrapper {
+.footer {
   background: var(--special-greylight);
+}
+
+.footer-top-wrapper {
   color: var(--white);
   font-size: 18px;
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  height: 193px;
+  justify-items: right;
+  align-items: flex-start;
 }
 
 .footer-links-category, .footer-links-nav {
@@ -445,15 +535,59 @@ header {
   opacity: 0.5;
 } 
 
-.footer-footer {
+.footer-links h2 {
+  display: none;
+}
+
+.footer-top-intro {
+  flex-basis: 321px;
+}
+
+.footer-links {
+  flex-grow: 1;
+}
+
+.footer-links-nav, .footer-links-category {
+  flex-grow: 1;
+  display: flex; 
+  justify-content: flex-end;
+}
+
+.footer-links-nav a, .footer-links-category a {
+  margin-left: 60px;
+}
+
+
+.footer-footer-wrapper {
   font-size: 16px;
   background-color: var(--special-grey);
   color: var(--white);
 }
 
+.footer-footer {
+  width: 940px;
+  margin: 0 auto;
+}
+
 .footer-social ul {
   list-style: none;
 }
+
+.footer-social h2 {
+  display: none;
+}
+
+.footer-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer-social {
+  justify-self: center;
+}
+
+
 .footer-link {
   color: var(--special-links);
 }
@@ -461,6 +595,15 @@ header {
 .footer-link:active{
   opacity: 0.5;
 }
+
+.footer-footer p:first-child {
+  
+}
+
+.footer-footer span, .footer-footer p a {
+  display:block;
+}
+
 
 
 
@@ -611,9 +754,7 @@ header {
   grid-column-end: 2 / -1;
 }
 
-.pagination {
 
-}
 
 .perforators-description {
   grid-column: 1 / -1;

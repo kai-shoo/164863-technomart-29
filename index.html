@@ -11,12 +11,13 @@
     <header class="header">
         <div class="purchase-navigation-wrapper">
             <div class="purchase-navigation">
-                <a class="purchase-logo logo" href="#">
+                <a class="purchase-logo logo">
                     <img src="img/logo-technomart.svg" width="108" height="18" alt="логотип магазина «Техномарт»">
                 </a>
-                <!-- Форма поиска -->
+                <!-- Временная форма поиска -->
+                <input class="purchase-search" type="text">
                 <ul class="purchase-menu">
-                    <li class="purchase-item purcahse-bookmarks">
+                    <li class="purchase-item purchase-bookmarks">
                         <a href="#">Закладки: 0</a>
                     </li>
                     <li class="purchase-item purchase-cart">
@@ -258,8 +259,12 @@
     </main>
     <footer class="footer">
         <div class="footer-top-wrapper">
-            <a class="footer-logo logo" href="#">Техномарт</a>
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <div class="footer-top-intro">
+                <a class="logo">
+                    <img src="img/logo-technomart.svg" width="108" height="18" alt="логотип магазина «Техномарт»">
+                </a>
+                <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+            </div>
             <section class="footer-links">
                 <h2>Ссылки</h2>
                 <ul class="footer-links-nav">
@@ -295,9 +300,9 @@
                 </ul>
             </section>
         </div>
-            
+        <div class="footer-footer-wrapper">
             <div class="footer-footer">
-                <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
+                <p><span>© 2010–2019 Компания «Техномарт»</span>Все права защищены</p>
                 <section class="footer-social">
                     <h2>Давайте дружить!</h2>
                     <ul>
@@ -312,16 +317,17 @@
                         </li>
                     </ul>
                 </section>
-            <p>Обратная связь:
-                <a class="link footer-link" href="mail@htmlacademy.ru">mail@htmlacademy.ru
-                </a>
-            </p>
-            <p>
-                Разработано —
-                <a class="link footer-link" href="https://htmlacademy.ru">
-                    HTML Academy
-                </a>
+                <p>Обратная связь:
+                    <a class="link footer-link" href="mail@htmlacademy.ru">mail@htmlacademy.ru
+                    </a>
                 </p>
+                <p>
+                    Разработано —
+                    <a class="link footer-link" href="https://htmlacademy.ru">
+                        HTML Academy
+                    </a>
+                </p>
+            </div>
         </div>
         </footer>
     
