@@ -187,7 +187,7 @@ header {
   width: 940px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 0;
+  padding: 0;
   margin-bottom: 40px;
 }
 
@@ -535,9 +535,6 @@ header {
   opacity: 0.5;
 } 
 
-.footer-links h2 {
-  display: none;
-}
 
 .footer-top-intro {
   flex-basis: 321px;
@@ -600,7 +597,7 @@ header {
   
 }
 
-.footer-footer span, .footer-footer p a {
+.footer-footer span, .footer-link {
   display:block;
 }
 
