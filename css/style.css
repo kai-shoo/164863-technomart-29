@@ -662,9 +662,10 @@ header {
   list-style: none;
 }
 
-.sort__menu a {
+.sort__menu a, .sort h2 {
   font-family: var(--special-fonts);
   text-transform: uppercase;
+  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   color: black;
@@ -672,11 +673,13 @@ header {
 
  .sort__menu .sort__item_active {
   color: var(--basic-red);
+  margin-right: 70px;
 }
 
 .sort__item {
   text-decoration: underline dotted var(--basic-red);
   opacity: 0.3;
+  margin-right: 70px;
 }
 
 .catalog__menu {
@@ -763,5 +766,27 @@ header {
   margin-bottom: 70px;
 }
 
+
        
-       
+.header-content-account {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs {
+  display: flex;
+}
+
+.sort {
+  display: flex;
+  align-items: baseline;
+}
+
+.sort__menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination {
+  display: flex;
+}
