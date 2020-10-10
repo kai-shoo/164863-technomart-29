@@ -205,35 +205,15 @@ header {
   opacity: 1;
 }
 
-.search-wrapper:focus-within {
- background-color: white;
-}
-
-.purchase-search:focus + .search-icon path {
-  fill: var(--basic-red);
-}
-
-.purchase-search:focus + .search-icon {
-  opacity: 1;
-}
-
-.purchase-search:focus {
-  background-color: rgba(255, 255, 255, 1);
-  color: black;
-}
-
-.search-wrapper:focus-within .purchase-search::placeholder {
-  opacity: 0.3;
-}
-
-.search-wrapper:hover .search-icon {
-  opacity: 1;
-}
-
 .search-wrapper {
   position: relative;
   flex-grow: 1;
   display: flex;
+  color: white;
+} 
+
+.search-icon path {
+  fill: currentColor;
 }
 
 .search-icon {
@@ -243,7 +223,28 @@ header {
   top: 13px;
   left: 17px;
   opacity: 0.3;
+  fill: currentColor;
 }
+
+.purchase-search:focus {
+  background-color: white;
+  color: black;
+}
+
+.purchase-search:focus::placeholder {
+  opacity: 0.3;
+}
+
+.search-wrapper:focus-within {
+  color: red;
+}
+
+.purchase-search:hover + .search-icon {
+  opacity: 1;
+}
+
+
+
 
 .purchase-item > a {
   text-align: center;
