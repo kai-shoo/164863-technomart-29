@@ -239,6 +239,10 @@ header {
   color: red;
 }
 
+.search-wrapper:focus-within .search-icon {
+  opacity: 1;
+}
+
 .purchase-search:hover + .search-icon {
   opacity: 1;
 }
