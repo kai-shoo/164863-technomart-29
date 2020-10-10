@@ -190,22 +190,59 @@ header {
 
 .purchase-search {
   position: relative;
-  flex-grow: 1;
   font: inherit;
-  background-color: inherit;
   border: none;
   outline: white;
   display: block;
+  height: 100%;
   padding-left: 42px;  
   color: white;
-  
+  flex-grow: 1;
+  background-color: var(--special-grey);
 }
 
+.purchase-search::placeholder {
+  opacity: 1;
+}
 
+.search-wrapper:focus-within {
+ background-color: white;
+}
+
+.purchase-search:focus + .search-icon path {
+  fill: var(--basic-red);
+}
+
+.purchase-search:focus + .search-icon {
+  opacity: 1;
+}
 
 .purchase-search:focus {
-  background-color: var(--white);
+  background-color: rgba(255, 255, 255, 1);
   color: black;
+}
+
+.search-wrapper:focus-within .purchase-search::placeholder {
+  opacity: 0.3;
+}
+
+.search-wrapper:hover .search-icon {
+  opacity: 1;
+}
+
+.search-wrapper {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+}
+
+.search-icon {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 13px;
+  left: 17px;
+  opacity: 0.3;
 }
 
 .purchase-item > a {
