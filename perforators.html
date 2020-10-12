@@ -12,15 +12,19 @@
         <div class="purchase-navigation-wrapper">
             <div class="purchase-navigation">
                 <a class="purchase-logo logo" href="index.html">
-                  <img src="img/logo-technomart.svg" width="108" height="18" alt="логотип магазина «Техномарт»">
+                    <img src="img/logo-technomart.svg" width="108" height="18" alt="логотип магазина «Техномарт»">
                 </a>
-                <!-- Временная форма поиска -->
-                <input class="purchase-search" type="text">
+                <div class="search-wrapper" >
+                    <input class="purchase-search" type="search" name="search" placeholder="Поиск">
+                    <svg class="search-icon" width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+                    </svg>
+                </div>
                 <ul class="purchase-menu">
-                    <li class="purchase-item purcahse-bookmarks">
+                    <li class="purchase-item purchase-bookmarks">
                         <a href="#">Закладки: 0</a>
                     </li>
-                    <li class="purchase-item button purchase-cart_red">
+                    <li class="purchase-item purchase-cart">
                         <a href="#">Корзина: 10</a>
                     </li>
                     <li class="purchase-item purchase-make-order">
@@ -30,18 +34,21 @@
             </div>
         </div>
         <div class="header-content">
-            <p class="header-content-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+            <p class="header-content-description">Интернет-магазин строительных материалов и&nbspинструментов для ремонта</p>
             <div class="header-content-contacts">
-                <p class="header-content-phone">+7 (812) 555-05-55</p>
+                <a class="header-content-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
                 <p class="header-content-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </div>
-            <div class="header-content-account">
-                <a class="header-content__profile" href="#">Равшан Джамшутович</a>
-                <a class="header-content__exit" href="#">Выход</a>
+            <div class="header-content-account_in">
+                <div class="header-content_logline">
+                    <a class="header-content__profile" href="#">Равшан Джамшутович</a>
+                    <a class="header-content__exit" href="#"><span class="visually-hidden">Выход</span></a>
+                </div>
                 <a class="header-content__orders" href="#">Мои заказы</a>
                 <a class="header-content__account" href="#">Личный кабинет</a>
             </div>
         </div>
+        
         <nav class="main-navigation">
             <ul class="main-navigation-menu">
                 <li class="menu-item">
@@ -69,34 +76,110 @@
         </nav>
     </header>
 
+
     <main class="container page-catalog">
         <ul class="breadcrumbs">
-            <li>
-                <a href="index.html">Главная</a>
+            <li class="breadcrumbs__item">
+                <a href="index.html"><span class="visually-hidden">Главная</span></a>
             </li>
-            <li>
+            <li class="breadcrumbs__item">
                 <a href="#">Каталог</a>
             </li>
-            <li>
+            <li class="breadcrumbs__item">
                 <a href="#">Инструмент</a>
             </li>
-            <li>
+            <li class="breadcrumbs__item">
                 <a>Перфораторы</a>
             </li>
         </ul>
         <h1 class="container__title">Перфораторы</h1>
 
         <section class="filter">
-            <h2>Фильтр товаров</h2>
-            <!-- Здесь будет форма фильтра -->
+            <h2>Фильтр:</h2>
+            <form method="get" action="https://echo.htmlacademy.ru">
+                <fieldset class="filter-range">
+                    <legend>Цена:</legend>
+                    <div class="filter__range">
+                        <div class="range__controls">
+                            <div class="scale">
+                            <div class="bar" style="width: 10%;margin-left: 60%"></div>
+                        </div>
+                        <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
+                        <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+                    </div>
+                    <div class="price__controls">
+                        <input type="number" name="min-price" value="0">
+                        <label class="max-price">
+                            &mdash;
+                        </label>
+                        <input type="number" name="max-price" value="15000">
+                    </div>
+                    </div>
+                </fieldset>
+                <fieldset class="filter-check">
+                    <legend>Производители:</legend>
+                    <ul class="filter-check-menu">
+                        <li>
+                            <label class="check">
+                                <input class="filter-check__input visually-hidden" type="checkbox" checked>
+                                <span class="checkbox"></span>
+                                BOSCH
+                            </label>
+                        </li>
+                        <li>
+                            <label class="check">
+                                <input class="filter-check__input visually-hidden" type="checkbox">
+                                <span class="checkbox"></span>
+                                ИНТЕРСКОЛ
+                            </label>
+                        </li>
+                        <li>
+                            <label class="check">
+                                <input class="filter-check__input visually-hidden" type="checkbox" checked>
+                                <span class="checkbox"></span>
+                                MAKITA
+                            </label>
+                        </li>
+                        <li>
+                            <label class="check">
+                                <input class="filter-check__input visually-hidden" type="checkbox">
+                                <span class="checkbox"></span>
+                                DEWALT
+                            </label>
+                        </li>
+                        <li>
+                            <label class="check">
+                                <input class="filter-check__input visually-hidden" type="checkbox">
+                                <span class="checkbox"></span>
+                                HITACHI
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                
+                <fieldset class="filter-radio">
+                    <legend>Питание:</legend>
+                    <label class="radio">
+                        <input class="visually-hidden  radio__input" name="wiretype" type="radio" value="wireless">
+                        <span class="radio__box"></span>
+                        Аккумуляторные
+                    </label>
+                    <label class="radio" type="radio" value="wire">
+                        <input class="visually-hidden radio__input" name="wiretype" type="radio">
+                        <span class="radio__box"></span>
+                        Сетевые
+                    </label>
+                </fieldset>
+                <button type="submit" class="filter-button">Показать</button>
+            </form>
+
         </section>
         
         <section class="sort">
             <h2>Сортировка:</h2>
             <ul class="sort__menu">
                 <li>
-                    <a href="#" class="sort__item_active">По цене</a>
-                    <!-- хочется сделать чекбоксами с ссылками -->
+                    <a href="#" class="sort__item .activated">По цене</a>
                 </li>
                 <li>
                     <a href="#" class="sort__item">По типу</a>
@@ -105,10 +188,20 @@
                     <a href="#" class="sort__item">По функционалу</a>
                 </li>
                 <li>
-                    <a href="#" class="sort__item_ascending">По возрастанию</a>
+                    <a href="#" class="sort__item_ascending">
+                        <span class="visually-hidden">По возрастанию</span>
+                        <svg width="11" height="10" viewbox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 0L11 10L0 10" fill="#C5C5C5"/>
+                        </svg>
+                    </a>
                 </li>
                 <li>
-                    <a href="#" class="sort__item_descending">По убыванию</a>
+                    <a href="#" class="sort__item_descending">
+                        <span class="visually-hidden">По убыванию</span>
+                        <svg width="11" height="10" viewbox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 10L0 0H11" fill="#C5C5C5"/>
+                        </svg>
+                    </a>
                 </li>
             </ul>
         </section>
