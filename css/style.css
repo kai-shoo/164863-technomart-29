@@ -447,10 +447,16 @@ header {
   line-height: 21px;
 }
 
-.purchase-cart_red {
+.purchase-cart_notempty {
   text-transform: none;
   font-size: 18px;
   line-height: 24px;
+  background-color: var(--basic-red);
+  color: white;
+}
+
+.purchase-cart_notempty:active {
+  background-color:var(--basic-red);
 }
 
 .header-content__account, .header-content__orders {
@@ -1657,10 +1663,13 @@ header {
   justify-content: space-between;
   grid-column: 2 / -1;
   box-sizing: border-box;
-  padding-bottom: 20px;
-  padding-top: 8px;
+  padding-top: 9px;
   padding-left: 21px;
   padding-right: 16px;
+  padding-bottom: 8px;
+  line-height: 18px;
+  height: 38px;
+
 }
 
 .sort__menu {
@@ -1668,10 +1677,9 @@ header {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: flex-end;
-  align-items: top;
-  box-sizing: content-box;
+  justify-content: space-between;
   width: 443px;
+  height: 38px;
 }
 
 .sort__menu a, .sort h2 {
@@ -1689,13 +1697,14 @@ header {
 
 
 
-.sort__item {
+.sort__item a {
   border-bottom: dotted 1px var(--basic-red);
-  color: rgba(0, 0, 0, 0.3);
-  margin-right: 70px;
+  color: rgba(0, 0, 0, 0.3); 
 }
-
-
+.sort__item_active a {
+  color: var(--basic-red);
+  border-bottom: none;
+}
 
 .sort__item:hover {
   color: black;
@@ -1715,9 +1724,12 @@ header {
 
 
 .sort__item_ascending {
-  margin-right: 21px;
+  margin-right: 18px;
 }
 
+.sort-icon_active path {
+  fill: var(--basic-red);
+}
 
 
 
@@ -1852,6 +1864,8 @@ header {
   padding-bottom: 8px;
   background-color: #F7F3EC;  
   margin-bottom: 18px;
+  height: 38px;
+  box-sizing: border-box;
   
 }
 
@@ -1885,9 +1899,8 @@ header {
 
 
 .range__controls {
-  position: relative;
-  height: 80px;
-  box-sizing: border-box;
+  height: 40px;
+  box-sizing: content-box;
   margin-bottom: 5px;
   margin-top: 15px;
   padding-top: 39px;
@@ -1900,20 +1913,22 @@ header {
 .range__controls .scale {
   height: 2px;
   background: #d7dcde;
+  position: relative;
+  padding-right: 20px;
 }
 
 .range__controls .bar {
-  width: 70%;
+  width: 90%;
   height: 2px;
   background: #00ca74;
 }
 
 .range__controls .toggle {
   position: absolute;
-  top: 31px;
+  top: -8px;
   height: 4px;
   width: 4px;
-  left: 0;
+  left: 0%;
   padding: 0;
   background-color: #ababab;
   border-radius: 50%;
@@ -1923,11 +1938,11 @@ header {
 }
 
 .range__controls .toggle-min {
-  left: 18px;
+  left: 0%;
 }
 
 .range__controls .toggle-max {
-  left: 160px;
+  left: 80%;
 }
 
 .price__controls {

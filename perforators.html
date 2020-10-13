@@ -24,7 +24,7 @@
                     <li class="purchase-item purchase-bookmarks">
                         <a href="#">Закладки: 0</a>
                     </li>
-                    <li class="purchase-item purchase-cart">
+                    <li class="purchase-item purchase-cart purchase-cart_notempty">
                         <a href="#">Корзина: 10</a>
                     </li>
                     <li class="purchase-item purchase-make-order">
@@ -103,17 +103,18 @@
                         <div class="filter__range">
                             <div class="range__controls">
                                 <div class="scale">
-                                    <div class="bar" style="width: 10%;margin-left: 60%"></div>
+                                    <div class="bar"></div>
+                                    <div class="toggle toggle-min" tabindex="0"></div>
+                                    <div class="toggle toggle-max" tabindex="0"></div>
                                 </div>
-                                <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
-                                <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+                                
                             </div>
                             <div class="price__controls">
                                 <input type="number" name="min-price" value="0">
                                 <label class="max-price">
-                                    &mdash;
+                                    <span>&mdash;</span>
                                 </label>
-                                <input type="number" name="max-price" value="15000">
+                                <input type="number" name="max-price" value="30000">
                             </div>
                         </div>
                     </fieldset>
@@ -179,25 +180,23 @@
             <section class="sort">
                 <h2>Сортировка:</h2>
                 <ul class="sort__menu">
-                    <li>
-                        <a href="#" class="sort__item activated">По цене</a>
+                    <li class="sort__item sort__item_active">
+                        <a href="#">По цене</a>
+                    </li>
+                    <li class="sort__item">
+                        <a href="#">По типу</a>
+                    </li>
+                    <li class="sort__item">
+                        <a href="#">По функционалу</a>
                     </li>
                     <li>
-                        <a href="#" class="sort__item">По типу</a>
-                    </li>
-                    <li>
-                        <a href="#" class="sort__item">По функционалу</a>
-                    </li>
-                    <li>
-                        <a href="#" class="sort__item_ascending">
+                        <a class="sort__item_ascending" href="#">
                             <span class="visually-hidden">По возрастанию</span>
-                            <svg width="11" height="10" viewbox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="sort-icon_active" width="11" height="10" viewbox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5.5 0L11 10L0 10" fill="#C5C5C5"/>
                             </svg>
                         </a>
-                    </li>
-                    <li>
-                        <a href="#" class="sort__item_descending">
+                        <a class="sort__item_descending" href="#">
                             <span class="visually-hidden">По убыванию</span>
                             <svg width="11" height="10" viewbox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5.5 10L0 0H11" fill="#C5C5C5"/>
