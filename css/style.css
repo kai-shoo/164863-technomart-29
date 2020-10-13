@@ -1701,25 +1701,16 @@ header {
   border-bottom: dotted 1px var(--basic-red);
   color: rgba(0, 0, 0, 0.3); 
 }
-.sort__item_active a {
-  color: var(--basic-red);
-  border-bottom: none;
-}
 
 .sort__item:hover {
   color: black;
 }
 
-.sort__item.activated,
-.sort__item:active {
+.sort__item .a__item_active,
+.sort__item a:active {
   color: var(--basic-red);
   border-bottom: none;
 
-}
-
-.sort__item:active {
-  color: var(--basic-red);
-  border-bottom: none;
 }
 
 
