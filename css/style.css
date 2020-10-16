@@ -1706,9 +1706,11 @@ header {
   color: rgba(0, 0, 0, 0.3); 
 }
 
-.sort__item:hover {
+.sort__item a:hover {
+  border-bottom: solid 1px var(--basic-red);
   color: black;
 }
+
 
 .sort__item .a__item_active,
 .sort__item a:active {
@@ -1717,7 +1719,10 @@ header {
 
 }
 
-
+.sort__item_active a {
+  color: var(--basic-red);
+  border: none;
+}
 
 .sort__item_ascending {
   margin-right: 18px;
