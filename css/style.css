@@ -1733,7 +1733,9 @@ header {
   fill: black;
 }
 
-.sort-icon_active path {
+.sort-icon_active path,
+.sort__item_ascending:active path,
+.sort__item_descending:active path {
   fill: var(--basic-red);
 }
 
