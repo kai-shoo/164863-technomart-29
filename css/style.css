@@ -1728,6 +1728,11 @@ header {
   margin-right: 18px;
 }
 
+.sort__item_ascending:hover path,
+.sort__item_descending:hover path {
+  fill: black;
+}
+
 .sort-icon_active path {
   fill: var(--basic-red);
 }
