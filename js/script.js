@@ -1,8 +1,10 @@
+// document.body.contentEditable = true;
 
 const buttonBuy = document.querySelectorAll(".products-item__buy");
 const buttonBookmark = document.querySelectorAll(".products-item__bookmark");
 const bookmark = document.querySelector(".purchase-bookmarks a");
 const cart = document.querySelector(".purchase-cart a");
+
 
 //adding to a cart
 for (var i = 0; i < buttonBuy.length; i++) {

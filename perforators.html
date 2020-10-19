@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="header-content">
-            <p class="header-content-description">Интернет-магазин строительных материалов и&nbspинструментов для ремонта</p>
+            <p class="header-content-description">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
             <div class="header-content-contacts">
                 <a class="header-content-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
                 <p class="header-content-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -109,7 +109,7 @@
             
             <section class="filter">
                 <h2>Фильтр:</h2>
-                <form method="get" action="https://echo.htmlacademy.ru">
+                <form method="POST" action="https://echo.htmlacademy.ru">
                     <fieldset class="filter-range">
                         <legend>Цена:</legend>
                         <div class="filter__range">
@@ -123,9 +123,7 @@
                             </div>
                             <div class="price__controls">
                                 <input type="number" name="min-price" value="0">
-                                <label class="max-price">
                                     <span>&mdash;</span>
-                                </label>
                                 <input type="number" name="max-price" value="30000">
                             </div>
                         </div>
@@ -135,35 +133,35 @@
                         <ul class="filter-check-menu">
                             <li>
                                 <label class="check">
-                                    <input class="filter-check__input visually-hidden" type="checkbox" checked>
+                                    <input class="filter-check__input visually-hidden" type="checkbox" name="BOSCH" checked>
                                     <span class="checkbox"></span>
                                     BOSCH
                                 </label>
                             </li>
                             <li>
                                 <label class="check">
-                                    <input class="filter-check__input visually-hidden" type="checkbox">
+                                    <input class="filter-check__input visually-hidden" type="checkbox" name="ИНТЕРСКОЛ">
                                     <span class="checkbox"></span>
                                     ИНТЕРСКОЛ
                                 </label>
                             </li>
                             <li>
                                 <label class="check">
-                                    <input class="filter-check__input visually-hidden" type="checkbox" checked>
+                                    <input class="filter-check__input visually-hidden" type="checkbox"  name="MAKITA" checked>
                                     <span class="checkbox"></span>
                                     MAKITA
                                 </label>
                             </li>
                             <li>
                                 <label class="check">
-                                    <input class="filter-check__input visually-hidden" type="checkbox">
+                                    <input class="filter-check__input visually-hidden" type="checkbox" name="DEWALT">
                                     <span class="checkbox"></span>
                                     DEWALT
                                 </label>
                             </li>
                             <li>
                                 <label class="check">
-                                    <input class="filter-check__input visually-hidden" type="checkbox">
+                                    <input class="filter-check__input visually-hidden" type="checkbox" name="HITACHI">
                                     <span class="checkbox"></span>
                                     HITACHI
                                 </label>
@@ -178,8 +176,8 @@
                             <span class="radio__box"></span>
                             Аккумуляторные
                         </label>
-                        <label class="radio" type="radio" value="wire">
-                            <input class="visually-hidden radio__input" name="wiretype" type="radio">
+                        <label class="radio">
+                            <input class="visually-hidden radio__input" name="wiretype" type="radio" value="wire">
                             <span class="radio__box"></span>
                             Сетевые
                         </label>
@@ -348,7 +346,7 @@
             </a>
 
             <section class="footer-navigation">
-                <h2 class="visually-hidden"></h2>
+                <h2 class="visually-hidden">Навигация в подвале</h2>
                 <ul>
                     <li>
                         <a href="#">Компания</a>
@@ -426,7 +424,7 @@
                 </p>
                 <p class="footer__developer">
                     Разработано —
-                    <a class="footer-link" href="https://htmlacademy.ru">
+                    <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">
                         htmlacademy.ru
                     </a>
                 </p>
