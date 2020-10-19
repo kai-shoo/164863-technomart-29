@@ -441,7 +441,7 @@ header {
   line-height: 21px;
 }
 
-.purchase-cart_notempty {
+.purchase-item_notempty {
   text-transform: none;
   font-size: 18px;
   line-height: 24px;
@@ -449,7 +449,7 @@ header {
   color: white;
 }
 
-.purchase-cart_notempty:active {
+.purchase-item_notempty:active {
   background-color:var(--basic-red);
 }
 
@@ -587,7 +587,6 @@ header {
   justify-content: center;
   padding-top: 17px;
   padding-bottom: 19px;
-
 }
 
 /* */
@@ -623,7 +622,7 @@ header {
 
 .promo-item {
   font-size: 24px;
-  height: 123px;
+  min-height: 123px;
   padding-left: 23px;
   padding-top: 20px;
   box-sizing: border-box;
@@ -636,6 +635,8 @@ header {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  max-width: 180px;
+
 }
 
 .promo-item__button {
@@ -1234,6 +1235,10 @@ header {
   line-height: 24px;
 }
 
+.toggle-delivery p {
+  width: 275px;
+}
+
 .toggle-delivery::after {
   content: "";
   position: absolute;
@@ -1727,7 +1732,7 @@ header {
 .pagination {
   list-style: none;
   display: flex;
-  margin-top: -22px;
+  margin-top: -24px;
   padding: 0;
 }
 
@@ -1814,7 +1819,7 @@ header {
 
 .perforators-description p {
   font-family: var(--special-fonts);
-  width: 870px;
+  width: 908px;
 }
 
 
@@ -1822,6 +1827,7 @@ header {
 
 
 .catalog-menu {
+  margin-top: 27px;
   list-style: none;
   padding: 0;
   display: grid;
@@ -1903,18 +1909,19 @@ header {
   height: 2px;
   background: #d7dcde;
   position: relative;
-  padding-right: 20px;
+  width: 180px;
+  
 }
 
 .range__controls .bar {
-  width: 90%;
+  width: 80%;
   height: 2px;
   background: #00ca74;
 }
 
 .range__controls .toggle {
   position: absolute;
-  top: -8px;
+  top: -9px;
   height: 4px;
   width: 4px;
   left: 0%;
@@ -1924,6 +1931,7 @@ header {
   cursor: pointer;
   border: 8px solid #ffffff;
   box-shadow: 0 2px 1px 0 #cfcfcf;
+  margin-left: -10px;
 }
 
 .range__controls .toggle-min {
@@ -1975,7 +1983,7 @@ header {
 /* FILTER-CHECK */
 
 .check, .radio {
-  font: 15px;
+  font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
   font-family: var(--special-fonts);
@@ -2192,6 +2200,8 @@ header {
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
   border-top: solid 7px var(--basic-red);
   box-sizing: border-box;
+  animation-name: animatetop;
+  animation-duration: 0.4s
 }
 
 .modal-write {
@@ -2199,7 +2209,6 @@ header {
   width: 620px;
   min-height: 430px;
   padding: 0;
-  display: none;
 }
 
 .mail-form {
@@ -2279,7 +2288,7 @@ textarea[id="text"] {
   border: none;
   margin: 0;
   padding: 0;
-
+  mix-blend-mode: multiply;
 }
 
 .modal__close:hover path {
@@ -2290,12 +2299,10 @@ textarea[id="text"] {
   fill: var(--error);
 }
 
-.modal-map {
-  display: none;
-}
+
 
 .modal-cart {
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
   box-sizing: border-box;
   width: 620px;
@@ -2379,7 +2386,14 @@ textarea[id="text"] {
   color: #C5C5C5;
 }
 
-.modal-cart {
-  display: none;
+.modal-login {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+@keyframes animatetop {
+  from {top: -50%; opacity: 0}
+  to {top: 50%; opacity: 1}
+}

@@ -254,12 +254,11 @@
                 <ul class="services-content-list">
                     <li id="delivery" class="services-content-item toggle-delivery">
                         <p class="services-content-item__title">Доставка</p>
-                        <p class="services-content-item__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-                        </p>
+                        <p class="services-content-item__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
                     </li>
                     <li id="garanty" class="services-content-item toggle-garanty">
                         <p class="services-content-item__title">Гарантия</p>
-                        <p class="services-content-item__text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                        <p class="services-content-item__text">Если купленный у нас товар поломается или заискрит, а также&nbsp;в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом&nbsp;уж восстановите как-нибудь сами.</p>
                     </li>
                     <li id="credit" class="services-content-item toggle-credit">
                         <p class="services-content-item__title">Кредит</p>
@@ -273,9 +272,9 @@
         <div class="container">
             <section class="description">
                 <section class="delivery">
-                    <h2 class="delivery__heading description__heading">Компания Техномарт</h2>
+                    <h2 class="delivery__heading description__heading">Компания &laquo;Техномарт&raquo;</h2>
                     <p class="delivery__lead description__lead">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-                    <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
+                    <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт&nbsp;работает со многими транспортными компаниями:
                     </p>
                     <ul class="delivery__list">
                         <li>Деловые линии</li>
@@ -292,7 +291,7 @@
                         заехав в наш офис:
                     </p>
                     <img src="img/map.png" alt="Большая конюшенная 19" width="300" height="158">
-                    <a class="button description__button contacts__button" href="#">Заблудились? Напишите нам!</a>
+                    <a class="button contacts__button" href="#">Заблудились? Напишите нам!</a>
                 </section>
             </section>
         </div>
@@ -393,7 +392,11 @@
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <img src="img/map_big.png" alt="карта проезда" width="943" height="442">
-        <button class="modal__close" type="button" aria-label="Закрыть"></button>
+        <button class="modal__close" type="button" aria-label="Закрыть">
+            <svg width="21" height="21" viewbox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z" fill="#EE3643"/>
+            </svg>
+        </button>
     </section>
       
     <section class="modal modal-write">
@@ -422,7 +425,42 @@
         </button>
       </section>
 
+      <section class="modal modal-login">
+        <h2 class="visually-hidden">Авторизация</h2>
+        <form class="modal-login" method="post">
+            <p class="input-login">
+                <label for="login_name">Логин:</label>
+                <input id="login_name" type="text" name="login_name" required>
+            </p>
+            <p class="input-password">
+                <label for="modal-password">Пароль:</label>
+                <input id="modal-password" type="password" name="password" required>
+            </p>
+            <div class="submit-wrapper">
+                <button class="button" type="submit">Отправить</button>
+            </div>
+        </form>
+        <button class="modal__close" type="button" aria-label="Закрыть">
+            <svg width="21" height="21" viewbox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z" fill="#EE3643"/>
+            </svg>
+        </button>
+      </section>
+   
+      <section class="modal modal-cart">
+        <h2>Товар добавлен в корзину!</h2>
+        <div class="modal-cart-buttons">
+            <a href="" class="modal-cart__button">Оформить заказ</a>                
+            <a href="" class="modal-cart__button modal-cart__button_shopping">Продолжить покупки</a>
+        </div>
+        <button class="modal__close" type="button" aria-label="Закрыть">
+            <svg width="21" height="21" viewbox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z" fill="#EE3643"/>
+            </svg>
+        </button>
+      </section>
 <script src="js/verticalTabs.js"></script>
 <script src="js/slider.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
