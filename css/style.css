@@ -272,6 +272,15 @@ header {
   min-width: 150px;
 }
 
+.purchase-bookmarks {
+  width: 164px;
+}
+
+.purchase-cart {
+  width: 136px;
+  justify-content: flex-end;
+}
+
 .purchase-item:active {
   background-color: var(--special-greyclick);
   opacity: 0.5;
