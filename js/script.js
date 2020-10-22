@@ -32,9 +32,6 @@ for (var i = 0; i < buttonBookmark.length; i++) {
     self.addEventListener("click", function(evt) {
         evt.preventDefault();
         var int = parseInt(bookmark.textContent.replace("Закладки: ", ""));
-        if (!int) {
-            bookmark.classList.add("purchase-item_notempty");
-        }
         bookmark.textContent = bookmark.textContent.replace(int, ++int);
     });
 }
