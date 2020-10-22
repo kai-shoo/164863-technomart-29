@@ -1235,7 +1235,7 @@ header {
 
 .services-content-list {
   list-style: none;
-  padding: 0px;
+  padding: 0;
   width: 619px;
   height: 243px;
   margin:0;
@@ -1314,7 +1314,7 @@ header {
 }
 
 .services-content-item__text {
-  margin-top: 0px;
+  margin-top: 0;
   margin-left: 21px;
   width: 331px;
   font-family: var(--special-fonts);
@@ -1639,7 +1639,7 @@ header {
   flex-wrap: wrap;
   grid-column: 1 / -1;
   padding-top: 6px;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .breadcrumbs a{
@@ -1924,7 +1924,7 @@ header {
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
-  padding-left: 0px;
+  padding-left: 0;
   
 }
 
@@ -2289,7 +2289,7 @@ header {
   box-sizing: border-box;
   width: 220px;
   margin-top: 9px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   padding-top: 10px;
   padding-right: 40px;
   padding-bottom: 10px;
