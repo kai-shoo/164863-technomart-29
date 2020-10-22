@@ -1711,7 +1711,7 @@ header {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 443px;
   height: 38px;
 }
@@ -1722,6 +1722,18 @@ header {
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
+}
+
+.sort__item:first-child {
+  margin-right: 70px;
+}
+
+.sort__item:nth-child(2) {
+  margin-right: 65px;
+}
+
+.sort__item:nth-child(3) {
+  margin-right: 46px;
 }
 
 
