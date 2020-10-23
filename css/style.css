@@ -845,6 +845,7 @@ header {
   margin: 0 4px;
   background-color: white;
   border-radius: 50%;
+  border: solid white 2px;
 }
 
 .slider_active, .slider__status:hover {
