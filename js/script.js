@@ -1,4 +1,4 @@
-document.body.contentEditable = true;
+// document.body.contentEditable = true;
 
 const buttonBuy = document.querySelectorAll(".products-item__buy");
 const buttonBookmark = document.querySelectorAll(".products-item__bookmark");

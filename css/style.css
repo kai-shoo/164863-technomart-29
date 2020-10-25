@@ -44,13 +44,6 @@ a {
   color: var(--white);
 }
 
-button {
-  background-color: inherit;
-  font: inherit;
-  border: inherit;
-  color: inherit;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -152,6 +145,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  
 }
 
 .logo::before {
@@ -165,9 +159,12 @@ header {
   height: 5px;
 }
 
-.logo:active {
+.logo:active,
+.logo:active::before {
   background-color: var(--error);
 }
+
+
 
 .purchase-menu {
   list-style: none;
@@ -282,6 +279,15 @@ header {
   background-color: var(--success);
 }
 
+.purchase-make-order:active {
+  background-color: var(--basic-green);
+  opacity: 1;
+}
+
+.purchase-make-order:active > a {
+  opacity: 0.5;
+}
+
 .purchase-bookmarks > a::before {
   content: "";
   position: relative;
@@ -294,13 +300,7 @@ header {
   opacity: 0.3;
 }
 
-.purchase-item > a:hover::before,
-.products-item__buy:hover::before {
-  opacity: 1;
-}
-
-.purchase-cart a::before,
-.products-item__buy::before {
+.purchase-cart a::before {
   content: "";
   position: relative;
   margin-right: 8px;
@@ -311,6 +311,16 @@ header {
   background-position: 0 0;
   opacity: 0.3;
 }
+
+.purchase-item > a:hover::before,
+.products-item__buy:hover::before {
+  opacity: 1;
+}
+
+
+
+
+
 
 /* HEADER CONTENT */
 
@@ -772,6 +782,7 @@ header {
   user-select: none;
   background-repeat: no-repeat;
   background-position: 0 0;
+  border: none;
 }
 
 .slider__controls_next {
@@ -907,6 +918,28 @@ header {
   visibility: hidden;
 }
 
+.products-item__buy::before {
+  content: "";
+  position: absolute;
+  left: 25px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+
+.products-item__buy:hover::before,
+.products-item__buy:active::before {
+  opacity: 0.3;
+}
+
+.products-item__buy:active {
+  padding: inherit;
+}
+
 .products-image-wrapper {
   display: flex;
   height: 180px;
@@ -1005,6 +1038,7 @@ header {
   box-shadow: inset 0 -3px 0 #367315;
   border-radius: 2px;
   top: 38px;
+  border: none;
   text-transform: uppercase;
   color: var(--white);
 }
@@ -1040,6 +1074,7 @@ header {
 
 .products-item__bookmark:active {
   opacity: 0.5;
+  padding: inherit;
 }
 
 /* MANUFACTURER */
@@ -1184,6 +1219,7 @@ header {
 
 .toggle__tab {
   background-color: var(--special-greylight);
+  border: none;
   box-shadow: 0 1px 0 var(--special-grey), inset 0 1px 0 #405069;
 }
 
