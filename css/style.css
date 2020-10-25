@@ -1,6 +1,7 @@
 /* Variables */
 
 :root {
+  --basic-black: #000000;
   --basic-red: #ee3643;
   --basic-green: #63a63e;
   --basic-grey: #3d546f;
@@ -72,7 +73,7 @@ img {
   margin: -1px;
   border: 0;
   padding: 0;
-  var(--basic-white)-space: nowrap;
+  white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
 }
@@ -1125,7 +1126,7 @@ header {
 }
 
 .manufacturer-item a {
-  height: 145x;
+  height: 145px;
   width: 220px;
   display: flex;
   justify-content: center;
