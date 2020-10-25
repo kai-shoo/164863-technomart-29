@@ -42,7 +42,7 @@
 }
 
 *:focus {
-  outline: 2px solid red; 
+  outline: 2px solid var(--basic-red); 
 }
 
 body {
@@ -51,7 +51,7 @@ body {
   padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
-  color: black;
+  color: var(--basic-black);
   background-color: var(--basic-white);
 }
 
@@ -72,7 +72,7 @@ img {
   margin: -1px;
   border: 0;
   padding: 0;
-  white-space: nowrap;
+  var(--basic-white)-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
 }
@@ -102,7 +102,7 @@ img {
 
 .tag_new::before {
   content: "NEW";
-  color: white;
+  color: var(--basic-white);
   background: var(--basic-red);
   font-size: 14px;
   display: flex;
@@ -203,11 +203,11 @@ header {
   position: relative;
   font: inherit;
   border: none;
-  outline: white;
+  outline: var(--basic-white);
   display: block;
   height: 100%;
   padding-left: 42px;
-  color: white;
+  color: var(--basic-white);
   background-color: var(--special-grey);
   flex-basis: inherit;
 }
@@ -219,7 +219,7 @@ header {
 .search-wrapper {
   position: relative;
   display: flex;
-  color: white;
+  color: var(--basic-white);
   flex-basis: 270px;
   box-sizing: border-box;
   flex-shrink: 1;
@@ -241,8 +241,8 @@ header {
 }
 
 .purchase-search:focus {
-  background-color: white;
-  color: black;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
 }
 
 .purchase-search:focus::placeholder {
@@ -413,7 +413,7 @@ header {
 .header-content-registration {
   font-size: 21px;
   line-height: 21px;
-  color: black;
+  color: var(--basic-black);
   background-color: var(--basic-white);
   min-height: 45px;
   display: flex;
@@ -460,7 +460,7 @@ header {
 .header-content__profile,
 .header-content__exit {
   background-color: var(--basic-white);
-  color: black;
+  color: var(--basic-black);
   font-size: 21px;
   line-height: 21px;
 }
@@ -470,7 +470,7 @@ header {
   font-size: 18px;
   line-height: 24px;
   background-color: var(--basic-red);
-  color: white;
+  color: var(--basic-white);
 }
 
 .purchase-item_notempty:active {
@@ -504,7 +504,7 @@ header {
 }
 
 .header-content_logline {
-  background-color: white;
+  background-color: var(--basic-white);
   display: flex;
   min-height: 45px;
   flex-grow: 1;
@@ -765,7 +765,7 @@ header {
 
 .promo-slider {
   font-size: 18px;
-  background-color: black;
+  background-color: var(--basic-black);
   color: var(--basic-white);
   width: 620px;
   grid-area: s;
@@ -792,7 +792,7 @@ header {
   height: 40px;
   margin-top: -10px;
   padding: 16px;
-  color: white;
+  color: var(--basic-white);
   font-weight: bold;
   font-size: 18px;
   user-select: none;
@@ -813,7 +813,7 @@ header {
 }
 
 .slider-item_heading {
-  color: white;
+  color: var(--basic-white);
   position: absolute;
   top: 22px;
   left: 25px;
@@ -845,15 +845,15 @@ header {
   height: 10px;
   width: 10px;
   margin: 0 4px;
-  background-color: white;
+  background-color: var(--basic-white);
   border-radius: 50%;
-  border: solid white 2px;
+  border: solid var(--basic-white) 2px;
 }
 
 .slider_active,
 .slider__status:hover {
   background-color: var(--basic-red);
-  border: solid white 2px;
+  border: solid var(--basic-white) 2px;
 }
 
 .slider__button {
@@ -990,7 +990,7 @@ header {
   line-height: 20px;
   font-family: var(--special-fonts);
   font-weight: 700;
-  color: black;
+  color: var(--basic-black);
   text-align: center;
   margin-bottom: 7px;
   margin-top: -2px;
@@ -1220,11 +1220,11 @@ header {
 }
 
 .toggle__tab:active {
-  background-color: white;
+  background-color: var(--basic-white);
 }
 
 .toggle__tab.enabled {
-  background-color: white;
+  background-color: var(--basic-white);
   color: var(--special-grey);
   box-shadow: 0 1px 0 var(--basic-white), inset 0 1px 0 var(--basic-white);
 }
@@ -1549,7 +1549,7 @@ header {
   display: flex;
   font-size: 16px;
   line-height: 18px;
-  color: white;
+  color: var(--basic-white);
   padding-top: 21px;
 }
 
@@ -1644,7 +1644,7 @@ header {
 .breadcrumbs a {
   text-transform: uppercase;
   font-size: 13px;
-  color: black;
+  color: var(--basic-black);
   font-family: var(--special-fonts);
 }
 
@@ -1740,7 +1740,7 @@ header {
 
 .sort__item a:hover {
   border-bottom: solid 1px var(--basic-red);
-  color: black;
+  color: var(--basic-black);
 }
 
 .sort__item .a__item_active,
@@ -1760,7 +1760,7 @@ header {
 
 .sort__item_ascending:hover path,
 .sort__item_descending:hover path {
-  fill: black;
+  fill: var(--basic-black);
 }
 
 .sort-icon_active path,
@@ -1784,7 +1784,7 @@ header {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-  color: black;
+  color: var(--basic-black);
 }
 
 .pagination__item {
@@ -1833,7 +1833,7 @@ header {
 }
 
 .pagination_active a {
-  color: white;
+  color: var(--basic-white);
 }
 
 /* CATALOG-DESCRIPTION */
@@ -2236,7 +2236,7 @@ header {
 }
 
 .radio__input:focus ~ .radio {
-  outline: 1px dotted black;
+  outline: 1px dotted var(--basic-black);
 }
 
 .filter-button {
@@ -2273,7 +2273,7 @@ header {
   transform: translate(-50%, -50%);
   display: none;
   color: var(--basic-black);
-  background-color: white;
+  background-color: var(--basic-white);
   filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.15));
   border-top: solid 7px var(--basic-red);
   box-sizing: border-box;
@@ -2324,7 +2324,7 @@ header {
   padding-bottom: 10px;
   padding-left: 10px;
   font: inherit;
-  color: black;
+  color: var(--basic-black);
   border: 2px solid var(--basic-greylight);
   display: block;
 }
@@ -2396,8 +2396,8 @@ textarea[id="text"] {
 .modal-cart__button {
   width: 192px;
   height: 38px;
-  color: black;
-  background-color: red;
+  color: var(--basic-black);
+  background-color: var(--basic-red);
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2421,13 +2421,13 @@ textarea[id="text"] {
 }
 
 .modal-cart__button:first-child {
-  color: white;
+  color: var(--basic-white);
   background-color: var(--basic-red);
 }
 
 .modal-cart__button:last-child {
-  color: black;
-  background-color: white;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 .modal-cart h2 {
