@@ -21,7 +21,7 @@ for (var i = 0; i < buttonBuy.length; i++) {
         
         //show modal
         document.querySelector(".modal-cart").style.display = "flex";
-
+        document.querySelector(".modal-cart__button").focus();
     });
 }
 
@@ -58,6 +58,7 @@ const feedbackButton = document.querySelector(".contacts__button");
 feedbackButton.addEventListener("click", function(evt) {
     evt.preventDefault();
     document.querySelector(".modal-write").style.display = "flex";
+    document.querySelector("#mail_name").focus();
 })
 
 //map button
@@ -65,6 +66,7 @@ const contactsButton = document.querySelector(".contacts img");
 contactsButton.addEventListener("click", function(evt) {
     evt.preventDefault();
     document.querySelector(".modal-map").style.display = "flex";
+    document.querySelector(".modal-map .modal__close").focus();
 })
 
 
