@@ -11,14 +11,17 @@
     <header class="header">
         <div class="purchase-navigation-wrapper">
             <div class="purchase-navigation">
-                <a class="purchase-logo logo">
+                <div class="logo">
                     <img src="img/logo-technomart.svg" width="108" height="18" alt="логотип магазина «Техномарт»">
-                </a>
+                </div>
                 <form class="search-wrapper" method="GET">
-                    <input class="purchase-search" type="search" name="search" placeholder="Поиск" aria-label="Форма поиска">
-                    <svg aria-hidden="true" focusable="false" class="search-icon" width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
-                    </svg>
+                    <label for="search" class="visually-hidden">Форма поиска</label>
+                    <input id="search" class="purchase-search" type="search" name="search" placeholder="Поиск:" aria-label="Форма поиска">
+                    <button type="submit">
+                        <svg aria-hidden="true" focusable="false" class="search-icon" width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+                        </svg>
+                    </button>
                 </form>
                 <ul class="purchase-menu">
                     <li class="purchase-item purchase-bookmarks">
@@ -41,27 +44,27 @@
                 <p class="header-content-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </div>
             <div class="header-content-account">
-                <a class="header-content-login" href="login-form.html">
+                <a class="header-content-login" href="#">
                     <svg aria-hidden="true" focusable="false" width="21" height="17" viewbox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" fill="#C5C5C5"/>
                         <path d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811 19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327 17.825 15.01 16.986 15.01Z" fill="#C5C5C5"/>
                     </svg>
                         Войти
                     </a>
-                <a class="header-content-registration" href="registration-form">Регистрация</a>
+                <a class="header-content-registration" href="#">Регистрация</a>
             </div>
         </div>
         
         <nav class="main-navigation">
             <ul class="main-navigation-menu">
                 <li class="menu-item">
-                    <a href="#">Главная</a>
+                    <div>Главная</div>
                 </li>
                 <li class="menu-item">
                     <a href="#">Компания</a>
                 </li>
                 <li class="menu-item">
-                    <a href="perforators.html">Каталог</a>
+                    <a href="#">Каталог</a>
                 </li>
                 <li class="menu-item">
                     <a href="#">Новости</a>
@@ -320,7 +323,7 @@
                         <a href="#">Новости</a>
                     </li>
                     <li>
-                        <a href="perforators.html">Каталог</a>
+                        <a href="#">Каталог</a>
                     </li>
                     <li>
                         <a href="#">Доставка</a>
@@ -400,7 +403,7 @@
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <a href="https://www.google.com/maps/place/Bolshaya+Konyushennaya+St,+19,+Sankt-Peterburg,+Russia,+191186/@59.938794,30.323083,16z/data=!4m5!3m4!1s0x4696310fca5ba729:0xea9c53d4493c879f!8m2!3d59.9387942!4d30.3230833?hl=ru-RU">
-            <img src="img/map_big.png" alt="карта проезда" width="943" height="442">
+            <img src="img/map-big.png" alt="карта проезда" width="943" height="442">
         </a>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="943" height="442" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
         <button class="modal__close" type="button" aria-label="Закрыть">
@@ -420,11 +423,11 @@
             </p>
             <p class="input-mail">
                 <label for="mail_email">Ваш e-mail:</label>
-                <input id="mail_email" type="email" name="e-mail" placeholder="email@example.com">
+                <input id="mail_email" type="email" name="e-mail" placeholder="email@example.com" required>
             </p>
             <p class="input-text-wrapper">
                 <label for="text">Текст письма:</label>
-                <textarea name="text" id="text" placeholder="В свободной форме"></textarea>
+                <textarea name="text" id="text" placeholder="В свободной форме" required></textarea>
             </p>
             <div class="submit-wrapper">
                 <button class="button" type="submit">Отправить</button>

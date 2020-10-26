@@ -1,5 +1,3 @@
-// document.body.contentEditable = true;
-
 const buttonBuy = document.querySelectorAll(".products-item__buy");
 const buttonBookmark = document.querySelectorAll(".products-item__bookmark");
 const bookmark = document.querySelector(".purchase-bookmarks a");
@@ -62,9 +60,10 @@ shoopingButton.addEventListener("click", function(evt) {
 
 //feedback button
 const feedbackButton = document.querySelector(".contacts__button");
+const modalWrite = document.querySelector(".modal-write");
 feedbackButton.addEventListener("click", function(evt) {
     evt.preventDefault();
-    document.querySelector(".modal-write").style.display = "flex";
+    modalWrite.style.display = "flex";
     document.querySelector("#mail_name").focus();
 })
 
@@ -75,8 +74,6 @@ contactsButton.addEventListener("click", function(evt) {
     document.querySelector(".modal-map").style.display = "flex";
     document.querySelector(".modal-map .modal__close").focus();
 })
-
-
 
 
 // slider
@@ -108,9 +105,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " slider_active";
 } 
 
-
-
-
 // vertical tabs
 
 tabcontent = document.getElementsByClassName("services-content-item");
@@ -136,3 +130,4 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "flex";
     evt.currentTarget.className += " enabled";
   } 
+
