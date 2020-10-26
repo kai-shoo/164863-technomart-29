@@ -42,10 +42,6 @@
   --special-fonts: "PT Sans", Arial, sans-serif;
 }
 
-*:focus {
-  outline: 2px solid var(--basic-red); 
-}
-
 body {
   min-width: 940px;
   margin: 0;
@@ -163,7 +159,6 @@ header {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  
 }
 
 .logo::before {
@@ -181,8 +176,6 @@ header {
 .logo:active::before {
   background-color: var(--error);
 }
-
-
 
 .purchase-menu {
   list-style: none;
@@ -265,6 +258,7 @@ header {
 .purchase-item {
   display: flex;
   align-items: stretch;
+  justify-content: stretch;
 }
 
 .purchase-item a {
@@ -272,16 +266,27 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 150px;
+  width: inherit;
 }
 
 .purchase-bookmarks {
   width: 164px;
 }
 
+.purchase-bookmarks a {
+  margin-left: -8px;
+}
+
 .purchase-cart {
   width: 136px;
-  justify-content: flex-end;
+}
+
+.purchase-cart a {
+  margin-left: -4px;
+}
+
+.purchase-make-order {
+  width: 150px;
 }
 
 .purchase-item:active {
@@ -334,11 +339,6 @@ header {
 .products-item__buy:hover::before {
   opacity: 1;
 }
-
-
-
-
-
 
 /* HEADER CONTENT */
 
@@ -472,6 +472,10 @@ header {
   line-height: 24px;
   background-color: var(--basic-red);
   color: var(--basic-white);
+}
+
+.purchase-item_notempty:hover {
+  background-color: var(--red-hover);
 }
 
 .purchase-item_notempty:active {
@@ -897,7 +901,7 @@ header {
   line-height: 30px;
   font-weight: 400;
   color: var(--special-greylight);
-  width: 680px;  
+  width: 680px;
 }
 
 .popular-heading__button,
@@ -956,7 +960,6 @@ header {
   background-position: 0 0;
   opacity: 0.3;
 }
-
 
 .products-item__buy:hover::before,
 .products-item__buy:active::before {
@@ -1448,7 +1451,6 @@ header {
   margin-bottom: 19px;
 }
 
-
 .contacts__button {
   text-transform: uppercase;
   font-size: 14px;
@@ -1494,7 +1496,6 @@ header {
   width: 546px;
   line-height: 24px;
 }
-
 
 .footer-navigation a:hover,
 .footer-category a:hover {
@@ -2289,7 +2290,6 @@ header {
 .modal-map iframe {
   position: absolute;
   border: none;
-
 }
 
 .modal-write {
@@ -2486,4 +2486,3 @@ textarea[id="text"] {
     opacity: 1;
   }
 }
-
